@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingTop="15dp"
+    android:orientation="vertical"
+    tools:ignore="ExtraText"
+    tools:context=".NewGame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/seekbar_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="203dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/humanScoreBoard"
+                android:layout_width="203dp"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="5dp"
+                android:text="User Wins :"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="serif"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/computerScore"
+                android:layout_width="203dp"
+                android:layout_height="44dp"
+                android:gravity="end"
+                android:paddingStart="5dp"
+                android:paddingTop="10px"
+                android:paddingEnd="5dp"
+                android:text="@string/computer_wins"
+                android:textColor="@color/black"
+                android:fontFamily="serif"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="540px"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/humanScores"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingStart="57dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="5dp"
+                android:text="@string/_00"
+                android:fontFamily="serif"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/computerScores"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:fontFamily="serif"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingStart="57dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="5dp"
+                android:text="@string/_00_"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/you_rolled"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:textStyle="bold">
+
+    </TextView>
+    <!--Images of Dice for the Human Player-->
+
+
+    <LinearLayout
+        android:layout_width="365dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/dice1"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd ="10dp"
+            android:maxWidth="50dp">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/dice2"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:maxWidth="50dp">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/dice3"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:maxWidth="50dp">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/dice4"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:maxWidth="50dp">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/dice5"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:maxWidth="50dp">
+        </ImageView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/computer_rolled"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:textStyle="bold">
+    </TextView>
+    <!-- Images for the computer-->
+    <LinearLayout
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="365dp"
+        android:layout_height="75dp"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/computer_dice1"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/computer_dice2"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:gravity="center">
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/computer_dice3"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp">
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/computer_dice4"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp">
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/computer_dice5"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp">
+
+        </ImageView>
+    </LinearLayout>
+
+    <!-- Throw and Score buttons-->
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/throwBtn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:fontFamily="serif"
+            android:text="@string/throw_new_btn">
+
+        </Button>
+
+        <Button
+            android:id="@+id/scoreBtn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:fontFamily="serif"
+            android:text="@string/score_new_btn">
+
+        </Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="385dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rerollText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your re-roll count is:"
+            android:fontFamily="serif"
+            android:textColor="@color/white"
+            android:textSize="60px"
+            android:layout_gravity="center"
+            android:gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="150dp"
+            android:layout_height="122px"
+            android:layout_gravity="center"
+            android:text="Tie break"
+            android:visibility="invisible"
+            android:layout_marginStart="120dp"
+            android:gravity="center_horizontal">
+
+        </Button>
+    </LinearLayout>
+    </LinearLayout>

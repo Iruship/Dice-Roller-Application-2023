@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">DiceGame</string>
+
+    <string name="score">score</string>
+    <string name="new_game">New Game</string>
+    <string name="about">About</string>
+    <string name="throww">Throw</string>
+    <string name="enter_your_targeted_score">Enter your targeted Score!</string>
+    <string name="enter_your_targeted_score__">"        Enter Your Targeted Score!     "</string>
+    <string name="enter_your_targeted_score___">Enter Your Targeted Score!!</string>
+    <string name="set">Set</string>
+    <string name="set__">SET</string>
+    <string name="set_a_target">Set A Target!</string>
+    <string name="your_score">Your Score :</string>
+    <string name="computer_s_score">Computer\'s Score:</string>
+    <string name="_0">0</string>
+    <string name="__0">0</string>
+    <string name="your__score">Your Score:</string>
+    <string name="computer_s_wins">Computer\'s wins :</string>
+    <string name="_00">00</string>
+    <string name="_00_">00</string>
+    <string name="you_rolled">You Rolled :</string>
+    <string name="computer_rolled">Computer Rolled :</string>
+    <string name="score_new_btn">Score</string>
+    <string name="throw_new_btn">Throw</string>
+    <string name="re_roll_a_few_dice">Re-roll a few dice</string>
+    <string name="re_roll">Re-Roll!</string>
+    <string name="you_lose">You Lose !!</string>
+    <string name="try_again">Try again</string>
+    <string name="ok">OK</string>
+    <string name="you_won">You Won !</string>
+    <string name="congratulations">Congratulations!!</string>
+    <string name="ok_">OK</string>
+    <string name="congratulations_play_again">Congratulations! Play Again !</string>
+    <string name="you_lose_">You Lose!</string>
+    <string name="click_on_ok_to_play_again">Click on OK to Play again</string>
+    <string name="computer_wins">Computer Wins :</string>
+    <string name="congratulations_you_won">Congratulations! You won!</string>
+    <string name="go_back">Go Back</string>
+    <string name="computer_s_wins_">Computer\'s wins :</string>
+    <string name="you_rolled_">You Rolled:</string>
+    <string name="your_re_roll_count_is">Your re-roll count is :</string>
+    <string name="h">H :</string>
+    <string name="c">C :</string>
+
+
+</resources>
